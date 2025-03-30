@@ -9,6 +9,16 @@
 - David Vera (https://github.com/david-ver4)
 
 ---
+## Project Highlights
+* Built a VGG19 model using transfer learning and dropout regularization to solve classify different skin conditions given images of people with different skin tones.
+* Implemented data augmentation to optimize results within compute constraints
+
+🔗 [Equitable AI for Dermatology | Kaggle Competition Page](https://www.kaggle.com/competitions/bttai-ajl-2025/overview)
+
+## **Setup & Execution**
+1. Make a copy of the Kaggle notebook(in repo) and datasets(on Kaggle).
+2. Make sure you have access to a GPU/TPU.
+3. Run code.
 
 ## Project Overview
 
@@ -98,3 +108,12 @@ The dataset contains several important columns that describe each image and its 
 ![Visualization 2](./Visualizations/Visual2.png)
 ![Visualization 3](./Visualizations/Visual3.png)
 
+## **Model Development**
+We utilized the VGG19 model with ImageNet weights for feature extraction on the given dataset: we froze all layers except for the last few newly added dense layers. We also added dropout layers to prevent overfitting. Then we unfreezed all the layers and fine-tuned the model. Throughout this process we did hyperparameter tuning for hyperparameters such as learning rate, number of epochs, dropout rate, etc. by experimenting with different potential values to see which will result in the highest final accuracy. 
+
+## **Results & Key Findings**
+Our model achieved an F1 score of 0.07875 and ranked 57 on the Kaggle leaderboard. 
+
+
+## **Next Steps & Future Improvements**
+Our model was able to reach an accuracy score of 0.42 when fine-tuning it but the final resulting f1 score is pretty low. Given more time, we would have explored fine-tuned models that are specifically pretrained on dermatology related data, which might have worked better for our limited dataset than using a model with pretrained imagenet weights. 
