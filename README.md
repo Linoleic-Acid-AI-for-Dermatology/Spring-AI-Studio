@@ -117,3 +117,6 @@ Our model achieved an F1 score of 0.07875 and ranked 57 on the Kaggle leaderboar
 
 ## **Next Steps & Future Improvements**
 Our model was able to reach an accuracy score of 0.42 when fine-tuning it but the final resulting f1 score is pretty low. Given more time, we would have explored fine-tuned models that are specifically pretrained on dermatology related data, which might have worked better for our limited dataset than using a model with pretrained imagenet weights. 
+
+## **References & Additional Resources**
+Shoutout to Cindy for providing the starter code for our project!
