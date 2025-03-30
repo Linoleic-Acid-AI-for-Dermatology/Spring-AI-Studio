@@ -99,7 +99,7 @@ The dataset contains several important columns that describe each image and its 
    - Horizontal flips
    - Brightness range (80-120%)
 3. **Train-Validation Split**: We divided data into 80% training and 20% validation sets while preserving class distributions
-4. **Image Processing**: Images were resized to 128×128 pixels and normalized using Xception's preprocessing function
+4. **Image Processing**: Images were resized to 128×128 pixels and normalized using VGG19's preprocessing function
 5. **Data Generator**: We implemented efficient data loading with batch processing using Keras' ImageDataGenerator
 
 ## Exploratory Data Analysis Visualizations
